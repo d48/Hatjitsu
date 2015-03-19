@@ -125,6 +125,19 @@ a:focus {
     background-color: rgb(209, 229, 181);
     background-color: rgba(209, 229, 181, 0.9);
   }
+
+  .header__logo--turtle-face {
+	background-image: url(../img/sun-turtle-face.png);
+	background-repeat: no-repeat;
+  }
+  .header__logo--happy-face {
+	background-image: url(../img/sun-happy-face.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    background-color: rgb(209, 229, 181);
+    background-color: rgba(209, 229, 181, 0.9);
+	background-size: 75%;
+  }
   .header__logo--yellow {
     background-color: rgb(237, 226, 177);
     background-color: rgba(237, 226, 177, 0.9);
