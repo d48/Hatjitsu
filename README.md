@@ -6,7 +6,7 @@ Forked from: https://github.com/richarcher/Hatjitsu
 
 ### Modifications
 
-* Ninja turtles at completiong of vote
+* Ninja turtles at completion of vote
 * Angelic sound on unanimous vote
 
 ##Features
