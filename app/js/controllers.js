@@ -19,11 +19,12 @@ function MainCtrl($scope, $timeout) {
     $scope.bodyState = ' body--green';
   });
   $scope.$on('not unanimous vote', function () {
-    $scope.logoState = ' header__logo--yellow';
+    $scope.logoState = ' header__logo--indifferent-face';
+    // $scope.logoState = ' header__logo--yellow';
     $scope.bodyState = ' body--yellow';
   });
   $scope.$on('problem vote', function () {
-    $scope.logoState = ' header__logo--turtle-face';
+    $scope.logoState = ' header__logo--angry-face';
     $scope.bodyState = ' body--red';
   });
   $scope.$on('unfinished vote', function () {
