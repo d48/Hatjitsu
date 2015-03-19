@@ -10,6 +10,16 @@ function MainCtrl($scope, $timeout) {
   $scope.errorMessage = null;
   $scope.message = null;
 
+  var sounds = {
+	shimmer: new Audio()
+  };
+
+  $scope.play_sound = function (sSound) {
+	sounds[sSound].src = document.getElementById(sSound + 'Id').src;
+	sounds[sSound].load();
+	sounds[sSound].play();
+  }
+
   $scope.$on('$routeChangeSuccess', function () {
     $scope.logoState = '';
     $scope.bodyState = '';
@@ -17,6 +27,7 @@ function MainCtrl($scope, $timeout) {
   $scope.$on('unanimous vote', function () {
     $scope.logoState = ' header__logo--happy-face';
     $scope.bodyState = ' body--green';
+	$scope.play_sound('shimmer');
   });
   $scope.$on('not unanimous vote', function () {
     $scope.logoState = ' header__logo--indifferent-face';
@@ -351,6 +362,7 @@ function RoomCtrl($scope, $routeParams, $timeout, socket) {
       processMessage(response);
     });
   };
+
 
   $scope.forceReveal = function () {
     // console.log("emit force reveal", { roomUrl: $scope.roomId });

@@ -1,5 +1,5 @@
 <div ng-init="configureRoom()">
-  <audio id="multiaudio4" src="../audio/shimmer.wav" preload="auto"></audio>
+  <audio id="shimmerId" src="../audio/shimmer.wav" preload="auto"></audio>
 
   <p class="roomNumber">Room: {{roomId}}</p>
 
@@ -86,11 +86,9 @@
           <button ng-click="forceReveal()" class="span2 btn" ng-disabled="forceRevealDisable" title="Force a reveal of all cards if there are some stragglers" >
             <i class="icon icon-exclamation-sign"></i> Reveal
           </button>
+		  <a ng-click="play_sound('shimmer')">Shimmer</a>
         </div>
       </div>
-
     </div>
-
   </section>
-
 </div>
