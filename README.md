@@ -2,6 +2,13 @@
 
 Create disposable online [Planning Poker](http://en.wikipedia.org/wiki/Planning_poker) rooms for quick and easy estimations.
 
+Forked from: https://github.com/richarcher/Hatjitsu
+
+### Modifications
+
+* Ninja turtles at completiong of vote
+* Angelic sound on unanimous vote
+
 ##Features
 
 * Simple interface
@@ -14,7 +21,7 @@ Create disposable online [Planning Poker](http://en.wikipedia.org/wiki/Planning_
 ##Installation
 
     npm install -d
-    node app
+    npm start
 
 [http://localhost:5000](http://localhost:5000)
 
