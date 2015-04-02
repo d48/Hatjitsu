@@ -12,6 +12,7 @@ function MainCtrl($scope, $timeout) {
 
   var sounds = {
 	shimmer: new Audio()
+	, trombone: new Audio()
   };
 
   $scope.play_sound = function (sSound) {
@@ -31,12 +32,13 @@ function MainCtrl($scope, $timeout) {
   });
   $scope.$on('not unanimous vote', function () {
     $scope.logoState = ' header__logo--indifferent-face';
-    // $scope.logoState = ' header__logo--yellow';
     $scope.bodyState = ' body--yellow';
+	$scope.play_sound('trombone');
   });
   $scope.$on('problem vote', function () {
     $scope.logoState = ' header__logo--angry-face';
     $scope.bodyState = ' body--red';
+	$scope.play_sound('trombone');
   });
   $scope.$on('unfinished vote', function () {
     $scope.logoState = '';
